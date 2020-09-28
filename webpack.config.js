@@ -13,10 +13,10 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './*.html',
+            template: './index.html',
         }),
         new MiniCssExtractPlugin({
-            filename: './*.css'
+            filename: './style.css'
         })
     ],
     devServer: {
