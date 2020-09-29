@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: ['@babel/polyfill', './index.js']
+    main: ['@babel/polyfill', ['./index.js', './src/pages/shows.html']]
     },
     output: {
     filename: 'bundle.js',
