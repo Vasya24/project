@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Heartless;
+  src: url('../fonts/Heartless.ttf');
+}
+
+@font-face {
+  font-family: Cinzel;
+  src: url('../fonts/Cinzel.ttf')
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +15,23 @@
 
 body {
   scroll-behavior: smooth;
+  font-family: Cinzel;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 section {
   height: 100vh;
   width: 100%;
+  box-sizing: border-box;
 }
 
-.intro_section {
-  background-color: #6D706B
+.intro {
+  background-color: #6D706B;
+  display: flex;
 }
 
 .intro__text {
@@ -27,12 +45,15 @@ section {
 }
 
 .intro__text_head {
+  font-family: Heartless;
+  font-size: 10rem;
   padding-bottom: 5vh;
   animation: rolling 2s ease;
 }
 
 .intro__text_content {
   animation: fading 5s ease;
+  font-size: .9rem;
 }
 
 @keyframes fading {
@@ -57,5 +78,83 @@ section {
   }
 }
 
+.intro__navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  width: 25vw;
+  padding-left: 10%;
+  background-color: lightblue;
+  left: 45vw;
+}
 
+.intro__navbar_item {
+  animation: flip 1s ease-in-out;
+  font-size: 2rem;
+}
 
+.intro__navbar_item:hover {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(-45deg);
+  }
+  100% {
+    transform: rotateX(0deg)
+  }
+}
+
+.news {
+  background-color: #036600;
+  height: 100vh;
+}
+
+.news_header {  
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.news_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news_card {
+  width: 15vw;
+  padding: 1%;
+  border: .5px inset red;
+  border-radius: 25px;
+}
+
+.news_card__text {
+  max-height: 15vh;
+  font-size: .8em;
+  text-overflow: ellipsis;
+}
+
+.news_card__readmore {
+  font-style: italic;
+  font-size: .87em;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.news_card__separator {
+  width: 50%;
+  height: .1rem;
+  background-color: red;
+}
+
+.section_separator {
+  height: .1rem;
+  border-color: black;
+  width: 100vw;
+  background-color: black;
+}
