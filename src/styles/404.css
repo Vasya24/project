@@ -1,29 +1,28 @@
 @font-face {
-    font-family: Cantebriggia;
-    src: url('../fonts/Cantebriggia.ttf');
-  }
-
+  font-family: Cantebriggia;
+  src: url("../fonts/Cantebriggia.ttf");
+}
 body {
-    background: radial-gradient(circle, rgba(195,84,84,1) 0%, rgba(54,19,19,1) 100%);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  background: radial-gradient(circle, #c35454 0%, #361313 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 p {
-    font-family: Cantebriggia;
-    font-size: 5rem;
-    color: #0C2913;
-    animation: fading 2s linear;
+  font-family: Cantebriggia;
+  font-size: 5rem;
+  color: #0C2913;
+  animation: fading 2s linear;
 }
 
 @keyframes fading {
-    0% {
-        opacity: 0;
-        font-size: 0;
-    }
-    100% {
-        opacity: 1;
-        font-size: 5rem;
-    }
+  0% {
+    opacity: 0;
+    font-size: 0;
+  }
+  100% {
+    opacity: 1;
+    font-size: 5rem;
+  }
 }

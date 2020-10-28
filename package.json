@@ -28,11 +28,13 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "jest": "^25.5.4",
-    "jsdoc": "^3.6.6"
+    "jsdoc": "^3.6.6",
+    "node-sass": "^4.14.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "core-js": "^3.6.5",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "sass": "^1.27.0"
   }
 }

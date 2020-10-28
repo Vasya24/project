@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Cinzel;
+  src: url("../fonts/Cinzel.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: Cinzel;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.shows_table {
+  position: relative;
+  top: 2vh;
+  border: 5px groove black;
+  border-collapse: collapse;
+  width: 90%;
+}
+.shows_table td {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 4vh;
+  padding-left: 1vw;
+}
+
+.shows_table__head td {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=shows.css.map */
